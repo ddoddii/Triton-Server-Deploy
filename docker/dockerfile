@@ -1,0 +1,5 @@
+FROM nvcr.io/nvidia/tritonserver:23.07-py3
+
+# Install safetensors
+RUN pip install torch torchvision
+RUN pip install safetensors  # or the correct installation command for safetensors
